@@ -34,11 +34,11 @@ app.listen(port, () => {
 const User = require("./Models/User.js");
 
 
-const main = async() => {
-    const user = await User.findById('60bcc03117e86241640d361a');
-    await user.populate('tasks').execPopulate();
-    console.log(user.tasks);
+// const main = async() => {
+//     const user = await User.findById('60bcc03117e86241640d361a');
+//     await user.populate('tasks').execPopulate();
+//     console.log(user.tasks);
 
-}
+// }
 
 // main();
